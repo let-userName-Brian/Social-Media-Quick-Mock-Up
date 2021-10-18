@@ -62,7 +62,7 @@ export default function ProfileCard({ profile }) {
                             fontWeight: '600',
                             font: 'strong'
                             }}>
-                            Beautiful isn't it?
+                            My favorite color is: {profile.favColor}
                         </Typography>
                         </Box>
                     </Modal>
