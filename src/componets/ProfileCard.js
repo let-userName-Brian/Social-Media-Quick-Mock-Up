@@ -1,9 +1,7 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardActionArea from '@mui/material/CardActionArea'
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import * as React from 'react';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import { useState } from "react"
 import { Box } from "@mui/system"
@@ -29,13 +27,11 @@ export default function ProfileCard({ profile }) {
         zIndex: 1,
         border: '1px solid',
         p: 1,
-        bgcolor: 'background.paper',
+        backgroundColor: 'background.paper',
     };
-    
 
     return (
         <Card sx={{ width: 345, m: 4, height: 460 }}>
-            <CardActionArea>
                 <CardMedia
                     component="img"
                     height="300"
@@ -50,19 +46,18 @@ export default function ProfileCard({ profile }) {
                         Birthday: {birthday}
                     </Typography>
                     <ClickAwayListener onClickAway={handleClickAway}>
-                                <Box sx={{ position: 'relative' }}>
-                                <button type="button" onClick={handleClick}>
-                                    Click me to see details
-                                </button>
-                                {open ? (
+                        <Box sx={{ position: 'relative' }}>
+                            <button type="button" onClick={handleClick} cursor="pointer">
+                                Click me to see details
+                            </button>
+                            {open ? (
                                 <Box sx={styles}>
                                     Hey! My favorite color is: {profile.favColor}
                                 </Box>
                                 ) : null}
                                 </Box>
-                            </ClickAwayListener>
+                    </ClickAwayListener>
                 </CardContent>
-            </CardActionArea>
         </Card>
     );
 }

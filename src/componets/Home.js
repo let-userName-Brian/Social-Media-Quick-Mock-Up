@@ -60,30 +60,3 @@ export default function Home() {
 }
 
 
-// import { UserProfile } from "./UserProfileDB"
-// import Article from "./Article"
-// import { Box } from "@mui/system"
-
-// export default function ArticleList() {
-//     return (
-//         <div>
-//             <Box display="flex">
-//                 {UserProfile.newsArticles.map((article, index) => <Article article={article} />)}
-//             </Box>
-//         </div>
-//     )
-
-
-
-
-//home
-// mport { Box } from "@mui/system"
-// import ArticleList from "./ArticleList"
-// import { Typography } from "@mui/material"
-
-// export default function Home() {
-//     return (<Box sx={{ p: 4 }}>
-//         <Typography variant="h2">News</Typography>
-//         <ArticleList />
-//     </Box>)
-// }
