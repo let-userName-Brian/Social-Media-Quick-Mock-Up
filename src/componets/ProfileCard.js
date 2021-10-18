@@ -52,7 +52,7 @@ export default function ProfileCard({ profile }) {
                     <ClickAwayListener onClickAway={handleClickAway}>
                                 <Box sx={{ position: 'relative' }}>
                                 <button type="button" onClick={handleClick}>
-                                    Details
+                                    Click me to see details
                                 </button>
                                 {open ? (
                                 <Box sx={styles}>
