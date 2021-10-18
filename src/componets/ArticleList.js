@@ -4,13 +4,12 @@ import { Box } from "@mui/system"
 
 export default function ArticleList() {
     return (
-        <div>
             <Box sx={{display: "flex",
-            marginTop: '100px',
-            backgroundColor:'grey',
-            color: "transparent"}}>
+            marginTop: '50px',
+            backgroundColor: "grey",
+            color: 'grey'
+            }}>
                 {UserProfiles.NewsArticles.map((article) => <Article article={article} />)}
             </Box>
-        </div>
     )
 }
